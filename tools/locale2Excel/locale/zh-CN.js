@@ -1,0 +1,1 @@
+export default {"common.device.lumi.acpartner":6686,"common.device.lumi.camera":6687}

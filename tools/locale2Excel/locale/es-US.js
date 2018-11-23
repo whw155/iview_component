@@ -1,0 +1,1 @@
+export default {"common.device.lumi.acpartner":"空调伴侣","common.device.lumi.camera":"空调伴侣"}
