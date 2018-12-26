@@ -1,0 +1,138 @@
+@import '~iview/src/styles/index.less';
+@my-theme: #00c284;
+@blue: #39f;
+@red: #ff5c33;
+@my-theme-hover-text-color: #ffffff;
+@primary-color: @my-theme;
+// body
+@font-family: "Helvetica Neue",
+Helvetica,
+"Microsoft YaHei",
+"微软雅黑",
+Arial,
+sans-serif;
+@text-color: #333;
+@line-height-base: 1.42857;
+
+// Layout and Grid
+@layout-header-background:@my-theme;
+// button
+.ivu-btn-theme {
+    border-color: @my-theme;
+    color: @my-theme;
+    background-color: @my-theme-hover-text-color;
+    font-size: 12px;
+}
+
+.ivu-btn-theme:hover {
+    color: @my-theme-hover-text-color;
+    background-color: @my-theme;
+    border-color: @my-theme;
+}
+
+.ivu-btn-blue {
+    border-color: @blue;
+    color: @blue;
+    background-color: @my-theme-hover-text-color;
+    font-size: 12px;
+}
+
+.ivu-btn-blue:hover {
+    color: @my-theme-hover-text-color;
+    background-color: @blue;
+    border-color: @blue;
+}
+
+.ivu-btn-red {
+    border-color: @red;
+    color: @red;
+    background-color: @my-theme-hover-text-color;
+    font-size: 12px;
+}
+
+.ivu-btn-red:hover {
+    color: @my-theme-hover-text-color;
+    background-color: @red;
+    border-color: @red;
+}
+
+// page
+// .ivu-page-item:hover {
+//     border-color: @my-theme;
+//     a {
+//         color: @my-theme;
+//     }
+// }
+
+// .ivu-page-item:hover {
+//     a {
+//         color: @my-theme;
+//     }
+// }
+
+// .ivu-page-item-active {
+//     background-color: @my-theme;
+//     border-color: @my-theme;
+//     &:hover {
+//         a {
+//             color: @my-theme-hover-text-color;
+//         }
+//     }
+// }
+
+// .ivu-page-prev:not(.ivu-page-disabled):hover,
+// .ivu-page-next:not(.ivu-page-disabled):hover {
+//     border-color: @my-theme;
+//     a {
+//         color: @my-theme;
+//     }
+// }
+
+// .ivu-page-item-jump-next,
+// .ivu-page-item-jump-prev {
+//     a {
+//         color: @my-theme;
+//     }
+// }
+
+// dialog
+
+.ivu-modal-wrap {
+    .ivu-modal-close {
+        .ivu-icon-ios-close-empty {
+            color: @my-theme-hover-text-color;
+        }
+    }
+    .ivu-modal-header {
+        background-color: @my-theme;
+        p {
+            color: @my-theme-hover-text-color;
+        }
+    }
+    .ivu-modal-footer {
+        text-align: center;
+        border-top: 0px;
+    }
+}
+
+// label
+.ivu-form-item-label{
+    font-weight: normal;
+}
+
+// Radio
+.ivu-radio-group-item {
+    font-weight: normal;
+}
+
+
+// Tab
+.ivu-tabs-nav .ivu-tabs-tab:hover {
+    color: @my-theme
+}
+
+// loadingBar
+.ivu-loading-bar{
+    z-index: 99999;
+}
+

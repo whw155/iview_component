@@ -1,0 +1,174 @@
+/*
+ * @Author: wuhaiwei 
+ * @Date: 2018-11-08 17:13:16 
+ * @Last Modified by: wuhaiwei
+ * @Last Modified time: 2018-11-08 17:17:08
+ */
+@page-wrap-bg-color: #fff; // content背景
+@theme-color: #00c284; //主题颜色
+@grey: #9ba1a7; //灰色字体颜色
+@my-theme-hover-text-color: #ffffff;
+@page-wrap-padding: 20px;
+@blue-btn: #50b1f6;
+
+*:not(i) {
+  font-size: 14px;
+}
+
+button {
+  box-shadow: none !important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.marginLeft10 {
+  margin-left: 10px;
+}
+
+.marginRight10 {
+  margin-right: 10px;
+}
+
+.marginTop10 {
+  margin-top: 10px;
+}
+
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+
+.marginLeft20 {
+  margin-left: 20px;
+}
+
+.marginRight20 {
+  margin-right: 20px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+.marginBottom20 {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  button+button {
+    margin-left: 10px;
+  }
+
+  &.right {
+    float: right;
+  }
+}
+
+.search,
+.refresh {
+  font-size: 22px;
+  color: @theme-color;
+  line-height: 31px;
+  vertical-align: middle;
+  // margin-left: 10px;
+  cursor: pointer;
+}
+
+// 蓝色按钮
+.ivu-btn-blue {
+  border-color: @blue-btn;
+  color: @blue-btn;
+  background-color: @my-theme-hover-text-color;
+  font-size: 12px;
+}
+
+.ivu-btn-blue:hover {
+  color: @my-theme-hover-text-color;
+  background-color: @blue-btn;
+  border-color: @blue-btn;
+}
+
+.ivu-btn-blue:focus {
+  outline: none !important;
+  color: @blue-btn;
+}
+
+// 单选框的样式
+.ivu-radio-group {
+  label {
+    .ivu-radio-inner {
+      height: 12px;
+      width: 12px;
+
+      &:after {
+        height: 6px;
+        width: 6px;
+      }
+    }
+
+    span:nth-of-type(2) {
+      color: #666666;
+      font-weight: 400;
+    }
+  }
+}
+
+// 表格行高亮度的颜色
+.ivu-table {
+
+  .ivu-table-row-highlight.ivu-table-row-hover,
+  .ivu-table-row-hover,
+  .ivu-table-row-highlight {
+    td {
+      background-color: rgb(214, 243, 237)
+    }
+  }
+}
+
+// 必填加*
+.required-input {
+  color: #ed3f14;
+  font-size: 12px;
+  line-height: 1;
+  font-family: SimSun;
+  margin-right: 1px;
+}
+
+.myInput {
+  text-align: center;
+  height: 32px;
+  width: 100%;
+  line-height: 1.42857;
+  padding: 4px 7px;
+  font-size: 12px;
+  border: 1px solid #dddee1;
+  border-radius: 4px;
+  color: #333;
+  background-color: inherit;
+  background-image: none;
+  position: relative;
+  cursor: text;
+  border: transparent;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #33ce9d;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(0, 194, 132, 0.75);
+    transition: 0.5s;
+  }
+
+  &:hover {
+    border: 1px solid #33ce9d;
+  }
+}
